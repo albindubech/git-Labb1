@@ -1,0 +1,32 @@
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.007 cd git
+   2        0.055 git init -b main
+   3        0.103 git add README.md && git commit -m "Initial commit"
+   4        0.028 git checkout -b feature1
+   5        0.114 git add README.md && git commit -m "Add dog and change moose to mouse"
+   6        0.037 git checkout main
+   7        0.112 git add README.md && git commit -m "Change moose to mahmut"
+   8        0.050 git merge feature1
+   9        0.090 git log
+  10        0.108 git add README.md && git commit -m "Merge feature1"
+  11        0.116 git log
+  12        0.049 git tag extinct 40208f
+  13        0.048 git reset --hard HEAD^
+  14        0.035 git branch feature2
+  15        0.038 git status
+  16        0.081 git branch
+  17        0.043 git add README.me && git commit -m "Fix uppercase"
+  18        0.108 git add README.md && git commit -m "Fix uppercase"
+  19        0.037 git checkout feature2
+  20        0.096 git add fix1.txt && git commit -m "Add fix1.txt"
+  21        0.104 git add fix2.txt && git commit -m "Add fix2.txt"
+  22        0.038 git checkout main
+  23        0.049 git checkout feature2
+  24        0.104 git log
+  25        0.042 git checkout main
+  26        0.068 git cherry-pick bd26
+  27        0.077 history
+  28        0.032 git remote add origin https://github.com/albindubech/git-Labb1.git
+  29        1.632 git push --all origin
+  30        1.610 git push origin extinct
